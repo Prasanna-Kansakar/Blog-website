@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Character Encoding of default character set for HTML5 -->
+		<meta charset="UTF-8">
+		<!-- title of the webpage -->
+		<title>Contact Us</title>
+		<!-- meta tags for the webpage Contact Us -->
+		<meta name="description" content="Page of the website FDIUb Tech that is used to the contact the owners in regard to feed back">
+		<meta name="keywords" content="HTML,ContactUs,form,FDIUb Tech,javascript, location, map, locationmap">
+		<meta name="author" content="Prasanna Ratna Kansakar">
+		<!-- link to external CSS for the webpage -->
+		<link href="../CSS/mystyle.css" rel="stylesheet" type="text/css">
+		<!-- internal CSS for the webpage -->
+		<style type="text/css">
+			/*Style for main tag*/
+			main{
+				margin: 0 auto;
+				width: 100%;
+				height: 400px;
+				background-color: #4682B4;
+				color: white;
+			}
+			/*Style for the element with the class img*/
+			main .img{
+				margin: 25px 50px 0 0;
+				float: right;
+				width: 50%;
+				height: 70%;
+			}
+			/*Style for image inside the element with the class img*/
+			main .img img{
+				width: 90%;
+				height: 90%;
+			}
+			/*Style for the element with the class form*/
+			main .form{
+				width: 40%;
+				margin: 25px 0 0 50px;
+				display: inline-block;
+			}
+			/*Style for label tag inside form tag inside the element with the class form */
+			main .form form label{
+				margin: 10px;
+			}
+			/*Style for button tag inside the element with the class form*/
+			main .form button{
+				border-color: #0080FF;
+				float: left;
+				font-size: 120%;                                                
+				border-radius: 5px;
+				color: white;
+				background-color:#0080FF; 
+			}
+			/*Style for the element with the class speech-bubble*/
+			main form label .speech-bubble {
+				float: right;
+				position: relative;
+				background: #00aabb;
+				border-radius: .4em;
+				width: 140px;
+				right: 240px;
+				padding: 2px;
+			}
+			/*Style for content after the element with the class speech-bubble*/
+			main form label .speech-bubble:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 0;
+				height: 0;
+				border: 9px solid transparent;
+				border-right-color: #00aabb;
+				border-left: 0;
+				border-bottom: 0;
+				margin-top: -4.5px;
+				margin-left: -9px;
+			}
+			/*Style for the elements having id A, B and C*/
+			#A, #B, #C{
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Start of header tag that contains logo, site name, search bar and clock-->
+		<header>
+			<img src="../images/OKYD0B1.png">
+			<!-- Start of div with class title -->
+			<div class="title">
+				<h1>FDIUb Tech</h1>
+				<h3>To Achieve Greatness</h3>
+			</div>
+			<!-- End of div with class title -->
+			<!-- Start of div with class Search -->
+			<div class="search">
+				<span>Search Website</span><br><br>
+				<input type="text" name="search" placeholder="   Search Website">
+				<button onclick="alert('Work in progress')">Search</button>
+			</div>
+			<!-- End of div with class search -->
+			<!-- Start of  div with class clock and onload function clock()-->
+			<div id="MyClockDisplay" class="clock" onload="clock()">
+			</div>
+			<!-- External link to javascript -->
+			<script type="text/javascript" src="../JS/clock.js"></script>
+		</header>
+		<!-- End of Header tag -->
+		<!-- Start of nav tag  that contains internal links to other webpages-->
+		<nav>
+			<!-- Start of unordered listing -->
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+				<li><a href="Research.html">Research</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+			</ul>
+			<!-- End of unordered listing -->
+		</nav>
+		<!-- End of nav tag -->
+		<!-- Start of main tag which contains a feedback form and location map -->
+		<main>
+			<!-- Start of div with class form -->
+			<div class="form">
+				<!-- Start of form tag with name messageform -->
+				<form name="messageForm">
+					<label>
+						IF ANY QUERY PLEASE SEND US A MESSAGE
+					</label><br><br>
+					<label>Name: <input type="text" id="Name" placeholder="Name">
+						<div class="speech-bubble" id ="A">
+							<span style="padding-left: 8px;">Please Fill this out</span>
+						</div>
+					</label><br><br>
+					<label>Email: <input type="text" id="Email" placeholder="Email">
+						<div class="speech-bubble" id="B">
+							<span style="padding-left: 8px;">Please Fill this out</span>
+						</div>
+					</label><br><br>
+					<label>Message:<br>
+						<textarea id="message" rows="10" cols="30" placeholder="Enter Message"></textarea>
+						<div class="speech-bubble" id="C" style="right: 220px;">
+							<span style="padding-left: 8px;">Please Fill this out</span>
+						</div>
+					</label><br>
+				</form>
+				<!-- End of form tag with name messageform -->
+				<button name="Submit" onclick="validateForm()" form="messageForm">Submit</button><br><br>
+				<label>*Required to Fill all the details</label>
+			</div>
+			<!-- End of div with class form -->
+			<!-- Start of div with class img -->
+			<div class="img">
+				<h1 style="text-align: center; padding-right: 40px;">LOCATION MAP</h1>
+				<a href="https://www.google.com/maps/place/Islington+College/@27.7087027,85.3237989,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7087027!4d85.3259876" target="_blank">
+					<img src="../images/map.png">
+				</a>
+			</div>
+			<!-- End of div with class img -->
+		</main>
+		<!-- End of main tag -->
+		<!-- Start of footer tag  that contains links to social media, input field to request VIP access and copyright info-->
+		<footer>
+			<!-- Start of div with class follow -->
+			<div class="follow">
+				Follow us on Social Media:<br>
+				<!-- Start of unordered listing -->
+				<ul>
+					<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://twitter.com/" target="_blank">Twiiter</a></li>
+				</ul>
+				<!-- End of unordered listing -->
+			</div>
+			<!-- End of dive with class follow -->
+			<img src="../images/OKYD0B1.png">
+			<!-- Start of div with class trade -->
+			<div class="trade">
+				&copy Copyright 2020 FDIUb Tech<br> All Rights Reserved.
+			</div>
+			<!-- Start of div with class member -->
+			<div class="member">
+				Request VIP membership<br>
+				<input type="text" name="Request" placeholder="Enter Email">
+				<button onclick="alert('Work in progress')">Submit</button>
+			</div>
+			<!-- End of div with class member -->
+		</footer>
+		<!-- End of the footer tag -->
+		<!-- Start of script tag that contains the function validateform() -->
+		<script type="text/javascript">
+			/*
+			 * validateForm() is used to validate if the form that is subimitted has no empty fields  
+			 */
+			function validateForm() {
+				// Get user input values from the input fields of the form
+				var name= document.getElementById('Name').value;
+				var email= document.getElementById("Email").value;
+				var message= document.getElementById('message').value;
+				//If conditions to check whether the necessary fields are filled or not
+				if (name=="" && email=="" && message=="") {
+					document.getElementById('A').style.visibility = "visible";
+					document.getElementById('B').style.visibility = "visible";
+					document.getElementById('C').style.visibility = "visible";
+					}
+				else if(name=="" && email=="" && message!=""){
+					document.getElementById('A').style.visibility = "visible";
+					document.getElementById('B').style.visibility = "visible";
+					document.getElementById('C').style.visibility = "hidden";
+				}
+				else if(name=="" && email!="" && message==""){
+					document.getElementById('A').style.visibility = "visible";
+					document.getElementById('B').style.visibility = "hidden";
+					document.getElementById('C').style.visibility = "visible";
+				}
+				else if(name!="" && email=="" && message==""){
+					document.getElementById('A').style.visibility = "hidden";
+					document.getElementById('B').style.visibility = "visible";
+					document.getElementById('C').style.visibility = "visible";
+				}
+				else if(name=="" && email!="" && message!=""){
+					document.getElementById('A').style.visibility = "visible";
+					document.getElementById('B').style.visibility = "hidden";
+					document.getElementById('C').style.visibility = "hidden";
+				}
+				else if(name!="" && email=="" && message!=""){
+					document.getElementById('A').style.visibility = "hidden";
+					document.getElementById('B').style.visibility = "visible";
+					document.getElementById('C').style.visibility = "hidden";
+				}
+				else if(name!="" && email!="" && message==""){
+					document.getElementById('A').style.visibility = "hidden";
+					document.getElementById('B').style.visibility = "hidden";
+					document.getElementById('C').style.visibility = "visible";
+				}
+				else if (name!="" && email!="" && message!=""){
+					document.getElementById('A').style.visibility = "hidden";
+					document.getElementById('B').style.visibility = "hidden";
+					document.getElementById('C').style.visibility = "hidden";
+					//Resetting the value of input fields
+					document.getElementById('Name').value="";
+					document.getElementById("Email").value="";
+					document.getElementById('message').value="";
+					alert("Thank you for your feedback");//Alert to display the following message
+				}
+			}
+		</script>
+		<!-- End of script tag -->
+	</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Character Encoding of default character set for HTML5 -->
+		<meta charset="UTF-8">
+		<!-- title of the webpage -->
+		<title>CV</title>
+		<!-- meta tags for the webpage CV -->
+		<meta name="description" content="Homepage of the website FDIUb Tech">
+		<meta name="keywords" content="HTML, CSS, javascript, CV, FDIUb Tech, technology">
+		<meta name="author" content="Prasanna Ratna Kansakar">
+		<!-- link to external CSS for the webpage -->
+		<link href="../CSS/mystyle.css" rel="stylesheet" type="text/css">
+		<!-- internal CSS for the webpage -->
+		<style type="text/css">
+			/*Style for main tag*/
+			main{
+				width: 100%;
+				height: 1300px;
+				background-color: #81D8D0;
+				color: white;
+			}
+			/*Style for element with class img*/
+			main .img{
+				width: 100%;
+				height: 500px;
+			}
+			/*Style for h2 tag inside element with class img*/
+			main .img h2{
+				font-size: 30px;
+				padding-top: 30px; 
+				margin-top: 0;
+				text-align: center;
+			}
+			/*Style for element with class slider*/
+			main .img .slider{
+				width: 60%;
+				height: 80%;
+				display: inline-block;
+			}
+			/*Style for element with id AR*/
+			main .img .slider #AR{
+				margin: 0 auto;
+				padding-left: 35px;
+				width: 80% ;
+				height: 90%;
+				display: inline-block;
+			}
+			/*Style for image inside element with id AR*/
+			#AR img{
+				width: 100%;
+				height: 100%;
+			}
+			/*Style for element with class RB*/
+			.RB{
+				border-radius: 95%;
+				padding:15px;
+				font-size: 15px;
+				color: grey;
+				border: 0px;
+				margin-top: 150px;  
+			}
+			/*Style for element with class name*/
+			main .img .name{
+				padding-top: 80px;
+				padding-right: 30px;
+				width: 35%;
+				float: right;
+			}
+			/*Style for element with class CV*/
+			main .CV{
+				display: flex;
+				width: 100%;
+			}
+			/*Style for element with the class leftcolumn*/
+			main .leftcolumn {
+    			flex: 75%;
+    			
+    		}
+    		/*Style for element with the class rightcolumn*/
+			main .rightcolumn {
+	   			flex: 25%;
+				padding-left: 20px;
+			}
+			/*Style for element with the class container*/
+			.container {
+	     		padding: 20px;
+	     		margin-top: 20px;
+	     		background-color:#4682B4;
+			}
+			/*Style for h2 and article tags inside the element with the class leftcolumn*/
+			.container article,.container h2{
+				margin: 12px;
+			}
+			/*Style for span tag inside the article tag which is inside the element with class conaitner*/
+			.container article span{
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Start of header tag that contains logo, site name, search bar and clock-->
+		<header>
+			<img src="../images/OKYD0B1.png">
+			<!-- Start of div with class title -->
+			<div class="title">
+				<h1>FDIUb Tech</h1>
+				<h3>To Achieve Greatness</h3>
+			</div>
+			<!-- End of div with class title -->
+			<!-- Start of div with class Search -->
+			<div class="search">
+				<span>Search Website</span><br><br>
+				<input type="text" name="search" placeholder="   Search Website">
+				<button onclick="alert('Work in progress')">Search</button>
+			</div>
+			<!-- End of div with class search -->
+			<!-- Start of  div with class clock and onload function clock()-->
+			<div id="MyClockDisplay" class="clock" onload="clock()">
+			</div>
+			<!-- External link to javascript -->
+			<script type="text/javascript" src="../JS/clock.js"></script>
+		</header>
+		<!-- End of Header tag -->
+		<!-- Start of nav tag  that contains internal links to other webpages-->
+		<nav>
+			<!-- Start of unordered listing -->
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+				<li><a href="Research.html">Research</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+			</ul>
+			<!-- End of unordered listing -->
+		</nav>
+		<!-- End of nav tag -->
+		<!-- Start of main tag which contains an image slider and multiple elements such as div -->
+		<main>
+			<!-- Start of div with class img-->
+			<div class="img">
+				<h2>Just a normal guy</h2>
+				<!-- Start of div with class slider -->
+				<div class="slider">
+					<!-- Start of div with id AR -->
+					<div id="AR">
+						<img src="../images/CV1.jpg">
+					</div>
+					<!-- End of div with id AR -->
+					<button class="RB" style="float: left; margin-left: 15px; /*Positioning of the button*/" onclick="back()"><</button>
+					<button class="RB" style="float: right; margin-right: 15px; /*Positioning of the button*/" onclick="next()">></button>
+				</div>
+				<!-- End of div with class slider -->
+				<!-- Start of section with class name -->
+				<section class="name">
+					<h1 style="font-size: 40px; /*Style for text*/">Prasanna Ratna Kansakar</h1>
+					<h3 style="font-size: 25px;/*Style for text*/">Email: np01cp4a190019@islingtoncollege.edu.np</h3>
+				</section>
+				<!-- End of section with class name -->
+			</div>
+			<!-- End of div with class slider -->
+			<!-- Start of div with class CV -->
+			<div class="CV">	
+				<!-- Start of div with class leftcolumn -->		
+			 	<div class="leftcolumn">
+			 		<!-- Start of div with class container -->
+			    	<div class="container">
+			      		<h2>Work Experince</h2>
+			      		<!-- Start of article tag -->
+			      		<article>
+			      			<hr>
+				      		<h3 style="margin-bottom: 12px; /*Positioning of the tag*/">Najik Trade and Holdings Pvt. Ltd., Jhamshikhel, Lalitpur</h3>
+				      		<h4 style="margin: 12px 0 12px 0/*Positioning of the tag*/">- Graphic Designer</h4>
+				      		<span>- June 2019- August 2019</span><br>
+				      		<h4>As an intern</h4>
+				      		<!-- Start of unordered list -->
+				      		<ul>
+				     			<li>Created graphical designs for social media posts</li><br>
+				     			<li>Edited videos for the website</li><br>
+				     			<li>Created a catalog for various products</li><br>
+				     			<li>Digital marketing of products in social media</li>
+				     		</ul>
+				     		<!-- End of unordered listing -->
+				      	</article>
+				      <!-- End of article tag -->
+			    	</div>
+			    	<!-- End of div with class container -->
+			    	<!-- Start of div with class container -->
+					<div class="container">
+				     	<h2>Educational Background</h2>
+				     	<!-- Start of article tag -->
+				     	<article>
+				     		<hr>
+				      		<h4>St.Xavier's School, Javalakhel- SEE</h4>
+				      		<span>- April 2010-May 2017</span>
+				      		<h4>St.Xavier's College, Maitighar- +2 Science</h4>
+				      		<span>- July 2017-July 2019</span>
+				      		<h4>Islington College, Kamal Pokhari- BSc(Hons) Computing</h4>
+				      		<span>- September 2019- Ongoing</span>
+				      	</article>	
+			      		<!-- End of article tag -->
+			    	</div>
+			    	<!-- End of div with class container -->
+			 	</div>
+			 	<!-- End of div with class leftcolumn -->
+			 	<!-- Start of div with class rightcolumn -->
+			 	<div class="rightcolumn">
+			  		<!-- Start of div with class container -->
+			    	<div class="container">
+			    		<h2>Soft skills</h2>
+			    		<!-- Start of article tag -->
+			     		<article>
+			     			<hr>
+			     			<!-- Start of unordered list -->
+			     			<ul>
+			     				<li>Ablility of Adapt</li><br>
+			     				<li>Good Problem solving skills</li><br>
+			     				<li>Good work ethic</li><br>
+			     				<li>Good Communication skills</li>
+			     				<!-- End of unordered listing -->
+			     			</ul>
+			     		</article>
+			     		<!-- End of article tag -->
+			    	</div>
+			    	<!-- End of div with class container -->
+			    	<!-- Start of div with class container -->
+			    	<div class="container">
+			     		<h2>Technical skills</h2>
+			     		<!-- Start of article tag -->
+			     		<article>
+			     			<hr>
+			     			<!-- Start of unordered list -->
+			     			<ul>
+			     				<li>Webpage Designing (HTML, CSS, Javascript)</li><br>
+			     				<li>Programming (Java, C++)</li><br>
+			     				<li>Graphics Designing</li>
+			     			</ul>
+			     			<!-- End of unordered listing -->
+			     		</article>
+			     		<!-- End of article tag -->
+			    	</div>
+			     	<!-- End of div with class container -->
+				</div>
+				<!-- End of div with class rightcolumn-->
+			</div>
+			<!-- End of div with class CV -->
+		</main>
+		<!-- End of main tag -->
+		<!-- Start of footer tag  that contains links to social media, input field to request VIP access and copyright info-->
+		<footer>
+			<!-- Start of div with class follow -->
+			<div class="follow">
+				Follow us on Social Media:<br>
+				<!-- Start of unordered listing -->
+				<ul>
+					<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://twitter.com/" target="_blank">Twiiter</a></li>
+				</ul>
+				<!-- End of unordered listing -->
+			</div>
+			<!-- End of dive with class follow -->
+			<img src="../images/OKYD0B1.png">
+			<!-- Start of div with class trade -->
+			<div class="trade">
+				&copy Copyright 2020 FDIUb Tech<br> All Rights Reserved.
+			</div>
+			<!-- Start of div with class member -->
+			<div class="member">
+				Request VIP membership<br>
+				<input type="text" name="Request" placeholder="Enter Email">
+				<button onclick="alert('Work in progress')">Submit</button>
+			</div>
+			<!-- End of div with class member -->
+		</footer>
+		<!-- End of the footer tag -->
+		<!-- Start of script tag that contains the function back() and next() -->
+		<script type="text/javascript">
+			var img = ['../images/CV1.jpg', '../images/CV2.jpg', '../images/CV3.jpg'];
+			var x = img.length;
+			var a = document.getElementById('AR');
+			//back() is used to change the image to the previous image
+			function back() {
+				//If conditions to check whether variable x is more than 0
+				if (x > 0) {
+					x = x - 1;
+				}
+				else {
+					x = img.length;
+				}
+				a.innerHTML="<img src="+img[x-1]+">";
+			}
+			//back() is used to change the image to the previous image
+			function next() {
+				//If conditions to check whether variable x is less tha img.lentgth
+				if (x<img.length) {
+					x = x + 1;
+				}
+				else {
+					x = 1;
+				}
+				a.innerHTML="<img src="+img[x-1]+">";
+			}
+		</script>
+	</body>
+</html>

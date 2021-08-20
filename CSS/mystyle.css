@@ -1,0 +1,189 @@
+/* Style for body tag*/
+body{
+	margin:0 ;
+	padding:0 ;
+	font-family: arial;
+}
+/*Style for header tag*/
+header{
+	width: 100%;
+	background: #0E4D92;
+	height:140px;
+	text-align:center;
+}
+/*Style for image inside header tag*/
+header img{
+	background: url('Images/logo.jpg'); 
+	height:140px;
+	float: left;
+}
+/*Style for element with the class search*/
+header .search{
+	margin: 20px 60px 0 0;
+	float: right;
+}
+/*Style for span tag inside element with the class search*/
+header .search span{
+	color: #7EF9FF;
+	font-size: 30px;
+}
+/*Style for button tag inside element with the class search*/
+header .search button{
+	border-radius : 0 15px 15px 0;
+	background-color:#89CFF0;
+	border-color: #4682B4; 
+	color: white;
+	font-size: 110%;
+	font-weight:bold;
+}
+/*Style for input tag inside element with the class search*/
+header .search input{
+	padding-left:10px;
+	border-radius : 15px 0 0 15px;
+	background-color:#89CFF0;
+	border-color: #4682B4; 
+	font-size: 110%;
+	color: white;
+}
+/*Style for element with the class title*/
+header .title{
+	float: left;
+	margin: 20px 0px 0px 25px;
+}
+/*Style for h1 tag inside element with the class title*/
+header .title h1{
+	margin:5px 0 0 0;
+	color: #7EF9FF;
+	font-size:200%;
+}
+/*Style for h3 tag inside of div tag which is inside the header tag*/
+header div h3{
+	margin:5px 0 0 0;
+	color:#7EF9FF;
+	font-size:180%;
+}
+/*Defining the name and location of font*/
+@font-face {
+  font-family: Orbitron;
+  src: url('../Font/Orbitron-Regular.ttf');
+}
+/*Style for element with the class clock*/
+header .clock{  
+	padding-top: 25px;
+    color: #7EF9FF;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+   
+}
+/*Style for nav tag*/
+nav{
+	border: 4px solid lightblue;
+	background:#4F97A3;
+	height:50px;
+}
+/*Style for ul tag inside the nav tag*/
+nav ul{
+	margin:0 auto;
+	padding:0 auto;
+	height:50px;
+	text-align: center;
+}
+/*Style for li tag inside of ul tag which is inside the nav tag*/
+nav ul li{
+	height: 100%;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+/*Style for anchor tag inside of li tag which is inside the ul tag which is inside the nav tag*/
+nav ul li a{
+	font-size:40px;
+	text-decoration:none;
+	color: white; 
+	margin: 0 10px;
+}
+/*Hover effect for anchor tag inside of li tag which is inside the ul tag which is inside the nav tag*/
+nav ul li a:hover{
+	background-color: #4C516D;
+}
+/*Style for footer tag*/
+footer{
+	margin: 0;
+	width: 100%;
+	height:124px;
+	background-color:#0E4D92;
+}
+/*Style for element with the class follow*/
+footer .follow{
+	display: inline-block;
+	width: 20%;
+	height: 80%;
+	color: #7EF9FF;
+	margin: 0;
+	padding: 10px 0 0 20px;
+	font-size: 20px;
+}
+/*Style for ul tag inside element with the class follow*/
+footer .follow ul{
+	margin: 0;
+}
+/*Style for anchor tag inside of li tag which is inside the ul tag which is inside the element with the class follow*/
+footer .follow ul li a{
+	text-decoration: none;
+	color: #7EF9FF;
+}
+/*Hover effect for anchor tag inside of li tag which is inside the ul tag which is inside the element with the class follow*/
+footer .follow ul li a:hover{
+	text-decoration: underline;
+}
+/*Style for element with the class trade*/
+footer .trade{
+	margin: 0;
+	width: 20%;
+	height: 80%;
+	float: right;
+	padding:20px 0 0 0;
+	color: #7EF9FF;
+	font-size: 120%;
+	text-align: center;
+}
+/*Style for image inside footer tag*/
+footer img{
+	height: 80px;
+	width: 7%;
+	float: left;
+}
+/*Style element with the class title*/
+footer .member{
+	display: inline-block;
+	color: #7EF9FF;
+	width: 35%;
+	height: 80%;
+	float: right;
+	margin: 10px 250px 0 0; 
+	font-size: 25px;
+	text-align: center;
+}
+/*Style for input tag inside element with the class member*/
+footer .member input{
+	border-radius : 15px 0 0 15px;
+	background-color:#89CFF0;
+	border-color: #4682B4; 
+	font-size: 110%;
+	color: white;
+	padding-left: 10px;
+	margin-top:10px; 
+}
+/*Style for button tag inside element with the class member*/
+footer .member button{
+	border-radius : 0 15px 15px 0;
+	background-color:#89CFF0;
+	border-color: #4682B4; 
+	color: white;
+	font-size: 110%;
+	font-weight:bold;
+	margin-top:10px; 
+}
+}
